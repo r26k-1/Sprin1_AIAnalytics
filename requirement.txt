@@ -1,0 +1,22 @@
+fastapi==0.95.0
+uvicorn==0.22.0
+pandas==2.1.0
+openpyxl==3.1.2
+spacy==3.6.0
+python-multipart==0.0.5  # For file uploads in FastAPI
+pydantic==1.10.8
+langchain==0.0.173  # For integrating LangChain
+huggingface-hub==0.18.0
+transformers==4.31.0  # For NLP tasks (optional)
+pymongo[srv]==4.5.0  # For MongoDB interaction
+loguru==0.7.0  # For logging
+pandas
+openpyxl  # For handling Excel files
+spacy
+scikit-learn
+textblob==0.17.1
+PyMuPDF==1.19.6
+
+numpy==1.23.5
+
+

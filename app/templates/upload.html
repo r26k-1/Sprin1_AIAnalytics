@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Preprocessing Application</title>
+</head>
+<body>
+    <h1>Data Preprocessing Application</h1>
+    <h2>Upload Your File</h2>
+    <form action="/upload/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv, .xlsx, .xls, .pdf, .txt" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if summary %}
+    <h2>Summary</h2>
+    <p>{{ summary }}</p>
+    {% endif %}
+
+    {% if sentiment %}
+    <h2>Sentiment Analysis</h2>
+    <h3>Transformers Result</h3>
+    <p>{{ sentiment.transformers }}</p>
+    <h3>TextBlob Result</h3>
+    <p>{{ sentiment.textblob }}</p>
+    {% endif %}
+</body>
+</html>
